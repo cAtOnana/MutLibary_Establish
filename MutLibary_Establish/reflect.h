@@ -13,8 +13,8 @@ struct pro {
 	char mutataa;
 	int pos;
 	std::string hseq="";
-};
+ };
 istream& operator>>(istream& is, vector<pro>& list);
-bool sortbyensp(pro& a, pro& b);
+bool sortbyensp(const pro& a,const pro& b);
 void fillhseq(istream& is,vector<pro>& list);
-void fill_hash(const vector<pro>& list, ProIndexMap& table);//
+void fill_hash(vector<pro>& list, ProIndexMap& table);

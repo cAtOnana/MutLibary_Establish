@@ -33,11 +33,9 @@ istream & operator>>(istream & is, vector<pro>& list)
 	}
 	return is;
 }
-bool sortbyensp(pro & a, pro & b)
-{
+bool sortbyensp(const pro& a,const  pro& b) {
 	return a.ensp < b.ensp;
 }
-
 void fillhseq(istream & is, vector<pro>& list)
 {
 	EnspHseqMap ehmap;
@@ -53,10 +51,10 @@ void fillhseq(istream & is, vector<pro>& list)
 			list[i].hseq = ehmap[list[i].ensp];
 	}
 }
-bool comparestr(pro& a, pro& b) {
+bool comparestr(const pro& a, const pro& b) {
 	return a.ensp < b.ensp;
 }
-void fill_hash(const vector<pro>& list_pro, ProIndexMap & pimap)
+void fill_hash(vector<pro>& list_pro, ProIndexMap & pimap)
 {
 	sort(list_pro.begin(), list_pro.end(), comparestr);
 	string ensp = list_pro[0].ensp;
