@@ -17,4 +17,4 @@ struct pro {
 istream& operator>>(istream& is, vector<pro>& list);
 bool sortbyensp(pro& a, pro& b);
 void fillhseq(istream& is,vector<pro>& list);
-void fill_hash(const vector<pro>& list, ProIndexMap& table);
+void fill_hash(const vector<pro>& list, ProIndexMap& table);//

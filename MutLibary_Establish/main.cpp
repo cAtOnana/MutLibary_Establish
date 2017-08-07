@@ -30,5 +30,5 @@ int main() {
 	vector<pro> list_pro;
 	in >> list_pro;
 	ProIndexMap table;
-	fill_hash(list_pro, table);
+	fill_hash(list_pro, table);//
 }
